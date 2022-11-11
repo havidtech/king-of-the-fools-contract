@@ -1,0 +1,9 @@
+{
+  "5": {
+    "goerli": {
+      "name": "goerli",
+      "chainId": "5",
+      "contracts": {}
+    }
+  }
+}
