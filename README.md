@@ -1,4 +1,4 @@
-# 👑 King of Fools (See [Source Code](packages/hardhat/contracts))
+# 👑 King of The Fools. (Goerli Testnet) (See [Source Code](packages/hardhat/contracts))
 
 This is a game of Kings! 🤺 
 
@@ -47,12 +47,12 @@ or
 - You can interact with the deployed contract on Goerli testnet directly:
 [Contract address](https://goerli.etherscan.io/address/0x4dA28Ff81bB435E221c6743471d813b207D28386#writeProxyContract)
 
-### Artifacts
+### Artifacts (Goerli Testnet)
 - [Implementation Contract](https://goerli.etherscan.io/address/0x007ff1fc2709f6ecedab3021804f0c330c83ea72#code). See Source Code [here](packages/hardhat/contracts)
 - [Proxy Contract](https://goerli.etherscan.io/address/0x4dA28Ff81bB435E221c6743471d813b207D28386#writeProxyContract)
 - [Proxy Admin](https://goerli.etherscan.io/address/0xa273cE8DD82Fa9F95865766B37b13d9AFD7c03b2#writeContract)
 
-###🚨 Security considerations taken:
+### 🚨 Security considerations taken:
 
 - 1️⃣ A current king of the fools cannot deposit into the contract next to claim the throne from himself. If this measure wasn't taken, imagine if the current cost to be the king of the fool is 1ETH, a hacker can deposit 1ETh to become the new king of the fools, this 1ETH goes to the prev king, then he deposits 100ETH (overly satisfies 1.5x) again to claim the throne from himself, the 100ETH goes back to him, increasing the cost to become the new king. Another user comes in and pays 150ETH to claim the throne, this funds goes back to the hacker, this way, the hacker has manipulated the cost of the throne for himself.
 
@@ -73,7 +73,7 @@ or
 
 - Ensure you have metamask chrome extension installed, if you don't, you can read this article on how to [install metamask on Chrome](https://blog.wetrust.io/how-to-install-and-use-metamask-7210720ca047?gi=aa6469944371)
 
-- Connect your wallet to the site
+- Connect your wallet to the site (*Be sure to change your network to Goerli testnet*)
 
 - On the UI, you can see stats about the project, there is a wall of fame containing list of kings from the newest to the oldest, highlighting all previous kings of fools and their deposit amount. By Looking at the newest info, you can tell what the next cost should be. 
 
