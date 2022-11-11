@@ -34,8 +34,7 @@ Chainlink price feed: For retreiving the late latest ETH/USD rate
 
 > A King of Fools frontend 💫
 
-You can interact with the contract through the project UI deployed here:
-{WEBSITE_URL}
+You can interact with the contract through the project UI deployed (here)[https://king-of-the-fools-ui.herokuapp.com/]
 
 or
 
