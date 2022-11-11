@@ -2,8 +2,6 @@
 
 This is a game of Kings! 🤺 
 
-#### Test Coverage: 100/100
-
 ## 🤠 How it works?
 
 1️⃣ Any user can deposit ETH or USDC into the contract, the first person to deposit into the contract sets the start price for the throne, whatever amount deposited by the first user becomes the base reference price for the throne and the person becomes the first king of the fools.
@@ -37,6 +35,8 @@ The contract has 3 core functionality:
 
 - You can interact with the contract through the project UI deployed [here](https://king-of-the-fools-ui.vercel.app/). [See Source code](https://github.com/havidtech/king-of-the-fools-ui)
 
+<img width="602" alt="image" src="https://user-images.githubusercontent.com/76119744/201289914-be7de7a9-a786-4dd6-9d22-07f0cae28355.png">
+
 or
 
 - You can interact with the deployed contract on Goerli testnet directly:
@@ -54,6 +54,10 @@ or
 - 2️⃣ Separated the deposit and withdraw functions. This ensure that the current king does not remain King for ever. A king can be a king for ever if he deposited into the King of Fools contract from a smart contract that rejects ETH, this means a new depositors transaction will always fail. See [Withdrawal Pattern](https://docs.soliditylang.org/en/v0.8.15/common-patterns.html#withdrawal-from-contracts)
 
 - 3️⃣ Check effect interaction pattern to avoid re-entrancy attacks.
+
+### Test Coverage: 100/100
+<img width="631" alt="image" src="https://user-images.githubusercontent.com/76119744/201290127-a15d1e97-4cee-40fa-baaf-a0bd4fcc7125.png">
+<img width="909" alt="image (1)" src="https://user-images.githubusercontent.com/76119744/201290191-14dd83e7-8e00-4ce6-8fa1-fd26bc3c1cfd.png">
 
 
 ## 🎬 How to get started:
@@ -86,6 +90,7 @@ or
 - To see the test coverage, navigate to packages/hardhat directory and run "yarn coverage"
 
 - Deploy the contract locally and play around with it
+
 
 Enjoy!
 
