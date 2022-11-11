@@ -1,4 +1,4 @@
-# 👑 King of Fools
+# 👑 King of Fools (See [Source Code](packages/hardhat/contracts))
 
 This is a game of Kings! 🤺 
 
