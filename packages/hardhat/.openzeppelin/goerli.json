@@ -1,0 +1,162 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xa273cE8DD82Fa9F95865766B37b13d9AFD7c03b2",
+    "txHash": "0x8dacc60a9801173276eac6ad31e658f71b41dbc5fd8724307e20f58ca3d74288"
+  },
+  "proxies": [
+    {
+      "address": "0x4dA28Ff81bB435E221c6743471d813b207D28386",
+      "txHash": "0xe580615289e077c0f352dbc36dc5e93f72de4103c050748cefd9241acd8be97f",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "c6283fddc5e547220696899030768da2bdb80793af976c66fc164b1ffadb1594": {
+      "address": "0x007fF1Fc2709f6eCedAB3021804f0C330c83eA72",
+      "txHash": "0xf293c06193f5796f3fbbe7500319c67f9f8ced3c64d2d87758792543a1ecc007",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:116"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "pendingClaims",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_mapping(t_address,t_struct(PendingClaim)1468_storage)",
+            "contract": "KingOfTheFools",
+            "src": "contracts/KingOfTheFools.sol:32"
+          },
+          {
+            "label": "kingOfTheFools",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_address",
+            "contract": "KingOfTheFools",
+            "src": "contracts/KingOfTheFools.sol:37"
+          },
+          {
+            "label": "highestDeposit",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "KingOfTheFools",
+            "src": "contracts/KingOfTheFools.sol:38"
+          },
+          {
+            "label": "currencyOfHighestDeposit",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_uint256",
+            "contract": "KingOfTheFools",
+            "src": "contracts/KingOfTheFools.sol:39"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(PendingClaim)1468_storage)": {
+            "label": "mapping(address => struct IKingOfTheFools.PendingClaim)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(PendingClaim)1468_storage": {
+            "label": "struct IKingOfTheFools.PendingClaim",
+            "members": [
+              {
+                "label": "usdc",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "eth",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
