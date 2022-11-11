@@ -15,6 +15,11 @@ If a user sends less than 1.5 the previous deposit, the transaction reverts and 
 
 ## Project Breakdown:
 
+### The Decision to be Upgradable 
+- We depend on USDC and USDC is upgradable so we are upgradable too.
+- Just in case of any unforseen vulnerability
+- Just in case what we know to be true now changes e.g 18 dp for ETH, 8dp for Chainlink USD, 6dp for USDC and so on.
+
 ### King of Fools Smart Contract 🕹
 
 The contract has 3 core functionality:
@@ -51,7 +56,7 @@ or
 
 - 1️⃣ A current king of the fools cannot deposit into the contract next to claim the throne from himself. If this measure wasn't taken, imagine if the current cost to be the king of the fool is 1ETH, a hacker can deposit 1ETh to become the new king of the fools, this 1ETH goes to the prev king, then he deposits 100ETH (overly satisfies 1.5x) again to claim the throne from himself, the 100ETH goes back to him, increasing the cost to become the new king. Another user comes in and pays 150ETH to claim the throne, this funds goes back to the hacker, this way, the hacker has manipulated the cost of the throne for himself.
 
-- 2️⃣ Separated the deposit and withdraw functions. This ensure that the current king does not remain King for ever. A king can be a king for ever if he deposited into the King of Fools contract from a smart contract that rejects ETH, this means a new depositors transaction will always fail. See [Withdrawal Pattern](https://docs.soliditylang.org/en/v0.8.15/common-patterns.html#withdrawal-from-contracts)
+- 2️⃣ Separated the deposit and withdraw functions. This ensure that the current king does not remain King for ever. A king can be a king for ever if he deposited into the King of Fools contract from a smart contract that rejects ETH, this means a new depositors transaction will always fail. See [Withdrawal Pattern](https://docs.soliditylang.org/en/v0.8.15/common-patterns.html#withdrawal-from-contracts). This can also happen with USDC. A current king could take actions that make him blacklisted on USDC. That way whenever transferFrom is used to send USDC claims to such a person, there will always be a revert. 
 
 - 3️⃣ Check effect interaction pattern to avoid re-entrancy attacks.
 
