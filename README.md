@@ -40,7 +40,7 @@ The contract has 3 core functionality:
 
 - You can interact with the contract through the project UI deployed [here](https://king-of-the-fools-ui.vercel.app/). [See Source code](https://github.com/havidtech/king-of-the-fools-ui)
 
-<img width="602" alt="image" src="https://user-images.githubusercontent.com/76119744/201289914-be7de7a9-a786-4dd6-9d22-07f0cae28355.png">
+<img width="744" alt="image" src="https://user-images.githubusercontent.com/76119744/201439327-50220709-13b7-4787-ab2d-ab3b8d17a2f5.png">
 
 or
 
